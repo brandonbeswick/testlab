@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    
+<link rel="stylesheet" type="text/css" href="style.css">    
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>    
+    
+
+<script>
+    
+$(document).ready(function(){
+    
+    $(".menuButton").click(function(){
+        var disCheck = $(".mobileMenu").css("height");
+
+		var windowH = window.innerHeight;
+        
+        if(disCheck == "0px"){
+        
+            $(".mobileMenu").css("height", windowH);
+ 
+            
+        }
+        else{
+             $(".mobileMenu").css("height","0px");       
+        }
+
+        
+    });
+    
+});    
+    
+</script>
+    
+</head>
+<body>
+<div class="navMenuHolder">
+
+    <div class="logo">
+        
+        <h2>Chum Media Pic</h2>
+    </div>
+
+    <nav class="deskMenu">
+    
+        <ul class="navMenu">
+            <a href="https://www.google.com/search?q=hlep&oq=hlep&aqs=chrome..69i57j0l5.647j0j7&sourceid=chrome&ie=UTF-8"><li class="menuItem"><h2>Home</h2></li></a>
+            <li class="menuItem"><h2><a href="pictures.html">Pictures</a></h2></li>
+            <li class="menuItem"><a href="video.html"><h2>Videos</h2></a></li>
+            <li class="menuItem"><a href="services.html"><h2>Services</h2></a></li>
+            <li class="menuItem"><a href="contact.html"><h2>Contact</h2></a></li>
+        
+        </ul>
+        
+    </nav>
+    
+    
+            <h2 class="menuButton">Menu</h2>
+
+    
+</div>
+    <nav class="mobileMenu">
+        
+        <ul class="navMenu">
+
+            <li class="menuItem"><a href=""><h2>Home</h2></a></li>
+            <li class="menuItem"><a href=""><h2>Pictures</h2></a></li>
+            <li class="menuItem"><a href=""><h2>Videos</h2></a></li>
+            <li class="menuItem"><a href=""><h2>Services</h2></a></li>
+            <li class="menuItem"><a href=""><h2>Contact</h2></a></li>
+        
+        </ul>
+            
+    </nav>
+<div class="mainBody">
+
+    <div class="headlineVideo">
+    
+        <div class="videoBox">
+            
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/iR407xInrFs" frameborder="0" allowfullscreen></iframe>
+                   
+            <h3>Video Name</h3>       
+            <p>Full discribition of the video. Explaining where it is from when it was taken and other things that can be useful. This would be a great area for SEO. </p>
+            
+            <div class="mediaButtonHolder">
+                <div class="mediaButton1">
+                </div>
+                <div class="mediaButton2">
+                </div>
+            </div>
+        
+
+        </div>
+        
+        <div class="videoBox">
+            
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/iR407xInrFs" frameborder="0" allowfullscreen></iframe>
+                   
+            <h3>Video Name</h3>       
+            <p>Full discribition of the video. Explaining where it is from when it was taken and other things that can be useful. This would be a great area for SEO. </p>
+            
+            <div class="mediaButtonHolder">
+                <div class="mediaButton1">
+                </div>
+                <div class="mediaButton2">
+                </div>
+            </div>
+            
+        
+
+        </div>
+    
+    
+    </div>
+    
+    <div class="pictureGroups">
+    
+        <div class="pictureBox">
+        
+
+            <img src="img/sharkteethLogo.jpg">
+            <h3>Album Name</h3>
+            <p>Full discribition of the video. Explaining where it is from when it was taken and other things that can be useful. This would be a great area for SEO. </p>      
+            
+            <div class="mediaButtonHolder">
+                <div class="mediaButton1">
+                </div>
+                <div class="mediaButton2">
+                </div>
+            </div>        
+            
+        </div>
+    
+        <div class="pictureBox">
+        
+
+            <img src="img/sharkteethLogo.jpg">
+            <h3>Album Name</h3>
+            <p>Full discribition of the video. Explaining where it is from when it was taken and other things that can be useful. This would be a great area for SEO. </p>      
+            
+            <div class="mediaButtonHolder">
+                <div class="mediaButton1">
+                </div>
+                <div class="mediaButton2">
+                </div>
+            </div>          
+            
+        </div>
+        
+        <div class="pictureBox">
+        
+
+            <img src="img/sharkteethLogo.jpg">
+            <h3>Album Name</h3>
+            <p>Full discribition of the video. Explaining where it is from when it was taken and other things that can be useful. This would be a great area for SEO. </p>      
+            
+            <div class="mediaButtonHolder">
+                <div class="mediaButton1">
+                </div>
+                <div class="mediaButton2">
+                </div>
+            </div>       
+            
+        </div>
+        
+        <div class="pictureBox">
+        
+
+            <img src="img/sharkteethLogo.jpg">
+            <h3>Album Name</h3>
+            <p>Full discribition of the video. Explaining where it is from when it was taken and other things that can be useful. This would be a great area for SEO. </p>      
+            
+            <div class="mediaButtonHolder">
+                <div class="mediaButton1">
+                </div>
+                <div class="mediaButton2">
+                </div>
+            </div>  
+            
+        </div>
+    
+    
+    </div>
+    
+</div>
+</body>
+</html>
