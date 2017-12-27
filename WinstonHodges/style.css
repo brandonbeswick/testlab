@@ -1,0 +1,250 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #574F57;
+}
+img{
+	width:100%;
+	height: auto;
+}
+iframe{
+    width: 100%;
+}
+
+h1, h2, h3 {
+font-family: 'Asul', sans-serif;	
+color: #8CA3A0;
+text-shadow: 1px 1px black;
+}
+h4, h5, h6, p, li, i, li a {
+font-family: 'Chivo', sans-serif;	
+color: #8CA3A0;
+text-shadow: 1px black;
+}
+p{
+	line-height: 1.5em;
+}
+ul a {
+
+}
+@media screen and (max-width: 1021px) {
+ul a {
+    text-decoration: none;
+}   
+}
+.navHolder{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    align-self: center;
+    margin-left: 8px;
+}
+.logo h1{
+	font-family: 'Seaweed Script', cursive; /*3*/
+	letter-spacing: 3px;
+}
+.mobileNavIcon{
+    display: flex;
+    align-self: center;
+    margin-right: 8px;
+}
+.mobileNavIcon i{
+    font-size: 28px;
+    margin-right: 8px;
+}
+.mobileSlidingNav{
+    display: none;
+    flex-direction: column;
+    text-align: center;
+}
+.mobileSlidingNav ul{
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.mobileSlidingNav a{
+    width: 100%;
+}
+.mobileSlidingNav ul li{
+    font-size: 22px;
+    padding: 8px;
+    border-top: 2px solid #8CA3A0;
+}
+.mobileSlidingNav ul li:hover{
+	color: #708A86;
+	background-color: #A384A3;
+}
+.mobileSlidingNav ul li:active{
+	color: #708A86;
+	background-color: #A384A3;
+}
+.deskNav{
+    display: none;
+    align-self: center;
+}
+.deskNav ul{
+    display: flex;
+    list-style: none;
+}
+.deskNav li{
+    margin: 10px;
+    font-size: 18px;
+}
+
+/*Mobile Media Start */
+
+@media screen and (min-width: 1021px) {
+    .deskNav{
+        display: flex;
+    }  
+    .mobileNavIcon{
+        display: none;
+    }
+    .mobileSlidingNav{
+        display: none;
+    }
+}
+
+/*Mobile Media End */
+
+.mainBodyWrap{
+    display: flex;
+    flex-direction: column;
+    border-top:2px solid #8CA3A0;
+}
+.frontContact{
+    display: flex;
+    flex-direction: column;
+}
+.frontCont{
+    border-bottom: 2px solid #8CA3A0;
+}
+.frontCont h3, .frontCont h2, .frontCont p{
+    margin-left: 8px; 
+}
+.frontEventHolder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.pageEventHolder{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+	grid-template-columns: 1fr 1fr 1fr;	
+    justify-content: space-between;
+}
+@media screen and (min-width: 820px) {
+    .frontEventHolder{
+        flex-direction: row;
+    }
+     .pageEventHolder{
+        display: grid;
+        align-items: flex-start;
+    }  
+    .eventBox{
+        max-width: 550px;
+    }
+    .eventBox img{
+        max-width: 550px;
+    }
+}
+
+.eventBox{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #8CA3A0;
+    margin: 10px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer nav ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+}
+footer nav li{
+    margin: 6px;
+    font-size:15px;
+}
+.tradeMark p{
+    font-size: 12px;
+}
+
+/* Slide Show Start */
+
+.slideShow{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 300px;
+	background-color: black;
+	z-index: 4;
+	background-position: center;
+	overflow: hidden;
+	border-bottom: 2px solid black;	
+}
+.slide{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background-size: cover; 
+	background-repeat: no-repeat;
+	background-position:  50% 15% ;
+	transition: .6s all;
+	top: 0;
+}
+.slide h3{
+	color: white;
+	text-align: center;
+	margin-top: 30%;
+	
+}
+.active{
+	
+	opacity: 1;
+	transition: 1.5s all;
+	
+}
+@media screen and (min-width: 1001px) {
+
+	.slideShow{
+		height: 400px;
+	}
+	.slide{
+
+	background-size: contain; 
+
+	}
+	
+}
+/* Slide Show End */
+
+/*!!!!! Half Hour Special !!!!!!! */
+
+.hhPic{
+    margin-top: 25px;
+    border: 4px solid black;
+    max-width: 450px;
+    align-self: center;
+}
+
+
+/*Videos */
+.videoHolder{
+    align-items: stretch;
+}
